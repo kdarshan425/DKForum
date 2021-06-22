@@ -7,6 +7,7 @@
 <li>Search threads available.</li>
 <li>Getting mails for New Submissions.</li>
 <li>Pagination system after every 10 queries</li>
+<li>Complete responsive website.</li>
 </ol>
 <br>
 <h2>Languages Used</h2>
@@ -24,4 +25,5 @@
 <li>Doubt solver system in college</li>
 <li>Review system in E-commerce stores</li>
 </ol>
-<h2>Example Email<h2>
+<h2>Some screen shots<h2>
+  <img src="ss.PNG">
