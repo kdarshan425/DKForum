@@ -28,4 +28,4 @@
 <h2>Some screen shots<h2>
   <img src="ss.PNG">
   <h4>View Recording above, <br>
-    name:bandicam 2021-06-22 19-22-49-183_1<h4>
+    name : bandicam 2021-06-22 19-22-49-183_1.mp4<h4>
