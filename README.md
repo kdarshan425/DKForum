@@ -8,6 +8,8 @@
 <li>Getting mails for New Submissions.</li>
 <li>Pagination system after every 10 queries</li>
 <li>Complete responsive website.</li>
+<li>Security like hashing password, etc..</li>
+<li>On page SEO </li>
 </ol>
 <br>
 <h2>Languages Used</h2>
