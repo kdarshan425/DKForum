@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, This is DKForum Website</h1>
-<h2 align="center">Fullstack website for Coding forum.</h2><br><br>
-<h3 align="center">This is Coding forum website, Including real time chat feature.</h3>
+<h2 align="center">Fullstack website for Coding forum.</h2><br>
+
 <h2>features</h2>
 <ol>
 <li>Real time chat feature.</li>
