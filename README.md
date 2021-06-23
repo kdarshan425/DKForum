@@ -29,5 +29,6 @@
 </ol>
 <h2>Some screen shots<h2>
   <img src="ss.PNG">
-  <h4>View Recording above, <br>
-    name : bandicam 2021-06-22 19-22-49-183_1.mp4<h4>
+  <h4>View Recording below, <br>
+  
+https://www.linkedin.com/posts/darshan-khope-9400571a2_webdevelopment-fullstack-html-ugcPost-6790338117455896576-XDHt
