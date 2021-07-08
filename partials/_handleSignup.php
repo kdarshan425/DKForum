@@ -18,7 +18,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             $hash = password_hash($pass, PASSWORD_DEFAULT);
             $sql= "INSERT INTO `users` (`sno`, `user_email`, `user_pass`, `timestamp`) VALUES (NULL, '$user_email', '$hash', current_timestamp());";
             $result = mysqli_query($conn, $sql);
-
+            $dno = mysqli_insert_id($conn);
+            
             if($result){
                 $showAlert = true;
                 session_start();
