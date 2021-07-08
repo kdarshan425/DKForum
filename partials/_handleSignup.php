@@ -21,7 +21,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
             if($result){
                 $showAlert = true;
-                header("Location: /dk/index.php?signupsuccess=true");
+                header("Location: https://dkforum.herokuapp.com/index.php?signupsuccess=true");
                 exit();
             }
         }
