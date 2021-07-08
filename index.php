@@ -80,7 +80,7 @@
           $desc = $row['category_description'];
           echo '<div class="col-md-4 my-2">
                   <div class="card" style="width: 100%;">
-                      <img src="/dk/img/cardo-'.$id.'.jpg" class="cimg card-img-top" alt="image for this category">
+                      <img src="img/cardo-'.$id.'.jpg" class="cimg card-img-top" alt="image for this category">
                       <div class="card-body">
                           <h5 class="card-title"><a href="threadlist.php?catid=' . $id . ' && page=1">' . $cat . '</a></h5>
                           <p class="card-text">' . substr($desc, 0, 90). '... </p>
