@@ -5,6 +5,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo:wght@300&family=Orbitron:wght@500&display=swap"
+        rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <!-- Bootstrap CSS -->
@@ -26,6 +29,9 @@
         .cimg{
             width:100%;
             height:200px;
+        }
+        h5,p{
+            font-family: 'Archivo', sans-serif;
         }
     </style>
     <title>Welcome to CodeForum </title>
@@ -64,8 +70,8 @@
     </div>
            
     <!-- Category container starts here -->
-    <div class="container my-4" id="ques">
-        <h2 class="text-center my-4">Codeforum - Browse Categories</h2>
+    <div class="container my-4" style="padding-bottom:30px;" id="ques">
+        <h2 class="text-center my-6" style="padding:50px;font-family: 'Orbitron', sans-serif;">DKForum - Browse Categories</h2>
         <div class="row my-4" data-masonry='{"percentPosition": true }'>
           <!-- Fetch all the categories and use a loop to iterate through categories -->
           
@@ -78,8 +84,8 @@
           $id = $row['category_id'];
           $cat = $row['category_name'];
           $desc = $row['category_description'];
-          echo '<div class="col-md-4 my-2">
-                  <div class="card" style="width: 100%;">
+          echo '<div class="col-md-4" style="padding:20px;">
+                  <div class="card" style="width: 100%;box-shadow: 0px 10px 20px -5px rgb(73 93 207 / 20%);">
                       <img src="img/cardo-'.$id.'.jpg" class="cimg card-img-top" alt="image for this category">
                       <div class="card-body">
                           <h5 class="card-title"><a href="threadlist.php?catid=' . $id . ' && page=1">' . $cat . '</a></h5>
