@@ -52,6 +52,7 @@
         $comment = $_POST['comment']; 
         $comment = str_replace("<", "&lt;", $comment);
         $comment = str_replace(">", "&gt;", $comment); 
+        $comment = str_replace("'", "\\'", $comment);
         $sno = $_POST['sno']; 
         $sql = "INSERT INTO `comments` ( `comment_content`, `thread_id`, `comment_by`, `comment_time`) VALUES ('$comment', '$id', '$sno', current_timestamp())";
         $result = mysqli_query($conn, $sql);
