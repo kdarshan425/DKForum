@@ -18,7 +18,7 @@
             min-height: 433px;
         }
     </style>
-    <title>Welcome to iDiscuss - Coding Forums</title>
+    <title>DKForum | Responses</title>
 </head>
 
 <body>
