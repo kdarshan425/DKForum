@@ -20,20 +20,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             $_SESSION['loggedin'] = true;
             $_SESSION['useremail'] = $email;
             $_SESSION['sno'] = $dno;
-            
-             header("LOCATION: https://dkforum.herokuapp.com/index.php");  
+            window.location.href = "https://dkforum.herokuapp.com/index.php";
+             exit();
             }
-        }
+            else{
+            window.location.href = "https://dkforum.herokuapp.com/index.php?login=failed && password doesnot matched";
+            }
+        }          
         
-            
-        echo 'loggedIn';
 
-    }
-        else{
-            echo 'not';
-        }
-
-    
+    } else{
+            window.location.href = "https://dkforum.herokuapp.com/index.php?login=failed&&email not found";
+        }  
 
 }
 ?>
