@@ -21,7 +21,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             $_SESSION['useremail'] = $email;
             $_SESSION['sno'] = $dno;
             
-             header("LOCATION: \dk/index.php")     ;  
+             header("LOCATION: https://dkforum.herokuapp.com/index.php")     ;  
             }
         }
         
