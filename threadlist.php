@@ -18,7 +18,7 @@
         min-height: 433px;
     }
     </style>
-    <title>DKForum - Coding Forums</title>
+    <title>Welcome to iDiscuss - Coding Forums</title>
 </head>
 
 <body>
@@ -34,6 +34,37 @@
     }
     
     ?>
+
+    <?php
+    $showAlert = false;
+    $method = $_SERVER['REQUEST_METHOD'];
+    if($method=='POST'){
+        // Insert into thread db
+        $th_title = $_POST['title'];
+        $th_desc = $_POST['desc'];
+
+        $th_title = str_replace("<", "&lt;", $th_title);
+        $th_title = str_replace(">", "&gt;", $th_title); 
+
+        $th_desc = str_replace("<", "&lt;", $th_desc);
+        $th_desc = str_replace(">", "&gt;", $th_desc); 
+
+        $sno = $_POST['sno']; 
+        $sql = "INSERT INTO `threads` (`thread_title`, `thread_desc`, `thread_cat_id`, `thread_user_id`, `timestamp`) VALUES ( '$th_title', '$th_desc', '$id', '$sno', current_timestamp())";
+        $result = mysqli_query($conn, $sql);
+        $showAlert = true;
+        if($showAlert){
+            echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <strong>Success!</strong> Your thread has been added! Please wait for community to respond
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                  </div>';
+        } 
+    }
+    ?>
+
+
     <!-- Category container starts here -->
     <div class="container my-4">
         <div class="jumbotron">
