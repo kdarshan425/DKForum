@@ -33,6 +33,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             $showError = "Password Does not match !";
         }    
     }
-    header("Location: /dk/index.php?signupsuccess=false&error=$showError");
+    header("Location: https://dkforum.herokuapp.com/index.php?signupsuccess=false&error=$showError");
 }
 ?>
