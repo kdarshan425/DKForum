@@ -21,6 +21,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
             if($result){
                 $showAlert = true;
+                session_start();
+                $_SESSION['loggedin'] = true;
+                $_SESSION['useremail'] = $email;
+                $_SESSION['sno'] = $dno;
                 header("Location: https://dkforum.herokuapp.com/index.php?signupsuccess=true");
                 exit();
             }
