@@ -34,7 +34,7 @@
             font-family: 'Archivo', sans-serif;
         }
     </style>
-    <title>Welcome to CodeForum </title>
+    <title>DKForum | Welcome</title>
 </head>
 
 <body>
