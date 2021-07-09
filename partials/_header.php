@@ -20,7 +20,7 @@ echo'
       if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
         echo'
         <form class="d-flex" style="padding: 10px;" action="search.php" method="get">
-          <input class="form-control me-2" type="search" name="search" placeholder="Search threads" aria-label="Search">
+          <input class="form-control me-2" type="search" name="search" placeholder="Search threads" aria-label="Search" required>
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
         
@@ -39,7 +39,7 @@ echo'
         </div>
 
         <form class="d-flex" style="padding: 10px;" action="search.php" method="get">
-          <input class="form-control me-2" type="search" name="search" placeholder="Search threads" aria-label="Search">
+          <input class="form-control me-2" type="search" name="search" placeholder="Search threads" aria-label="Search" required>
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>';
       }
