@@ -61,12 +61,4 @@ $id = isset($_GET['$showError']);
  ';
  }
 
-<script>
-  setTimeout(function () {
-  
-  // Closing the alert
-  $('.alert').alert('close');
-}, 5000);
 
-</script>
-  
