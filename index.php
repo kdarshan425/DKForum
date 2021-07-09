@@ -102,6 +102,15 @@
     </div>
 
     <?php include 'partials/_footer.php';?>
+    <script>
+  setTimeout(function () {
+  
+  // Closing the alert
+  $('.alert').alert('close');
+}, 5000);
+
+</script>
+  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
